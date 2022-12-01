@@ -1,0 +1,78 @@
+/* Div atras do header */
+#top-home {
+height: 50px;
+}
+
+/* Seletores do Banner */
+.img-banner {
+    width: 100%;
+}
+
+.banner {
+    justify-content: center;
+    display: flex;
+    position: relative;
+
+}
+
+.titulo-banner {
+    
+    font-family: 'Hubballi';
+    color: #C07B56;
+    font-size: 50px;
+    position: absolute; 
+    top: 30%;
+}
+
+/* Seletores da seção */
+.sobre {
+    margin-top: 30px;
+}
+
+.sobre-titulo {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #118CAB;
+    font-family: 'Hubballi';
+    text-align: center;
+    margin-top: 80px;
+}
+
+.sobre-escrita {
+    font-family: 'Hepta Slab';
+    font-size: 25px;
+    width: 940px;
+    text-align: center;
+    text-align: justify;
+    line-height: 50px;
+    color: #062E38;
+    margin: 20px auto 100px auto;
+    
+}
+
+/* Seletores da seção tipo de imóveis */
+.tipo-imoveis {
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    row-gap: 60px;
+    margin-bottom: 100px;
+    align-items: center;
+ 
+}
+
+.itens-tipo {
+    font-size: 20px;
+    font-family: 'Jaldi', sans-serif;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    display: flex;
+    gap: 20px;
+}
+
+.img-tipo {
+    width: 50px;
+    height: 50px;
+}
