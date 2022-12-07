@@ -1,4 +1,4 @@
-class Imovel{
+export class Imovel{
     #preco;
     #areaTotal;
     #corretor;
