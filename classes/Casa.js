@@ -4,10 +4,14 @@ class Casa extends Imovel {
     #areaLivre;
     #qtdAndares;
 
-    constructor(areaLivre, qtdAndares) {
-        this.areaLivre;
-        this.qtdAndares;
+    constructor(preco, areaTotal, corretor, logradouro, bairro, cidade, UF, CEP, areaLivre, qtdAndares) {
+        super(preco, areaTotal, corretor, logradouro, bairro, cidade, UF, CEP);
+        this.areaLivre = areaLivre;
+        this.qtdAndares = qtdAndares;
     }
+
+
+// getters & setters
 
     get areaLivre() {
         return this.#areaLivre;
@@ -34,6 +38,9 @@ class Casa extends Imovel {
         this.#qtdAndares = qtdAndares;
         return qtdAndares;
     }
+
+
+//métodos
 
     areaConstruida (){
         let area = super.areaTotal - this.areaLivre;
