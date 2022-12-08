@@ -7,8 +7,9 @@ export class Imovel{
     #cidade;
     #UF;
     #CEP;
+    #img;
 
-    constructor(preco, areaTotal, corretor, logradouro, bairro, cidade, UF, CEP){
+    constructor(preco, areaTotal, corretor, logradouro, bairro, cidade, UF, CEP, img){
         this.preco = preco;
         this.areaTotal = areaTotal;
         this.corretor = corretor;
@@ -17,6 +18,7 @@ export class Imovel{
         this.cidade = cidade;
         this.UF = UF;
         this.CEP = CEP;
+        this.img = img;
     }
 
     //Preco
@@ -109,6 +111,19 @@ export class Imovel{
         }
         this.#CEP = "000000000";
         return "000000000";
+    }
+
+    get img(){
+        return this.#img;
+    }
+
+    set img(img){
+        if( img == ""){
+            this.#img = "../imagens-imoveis/imagem-padrao.jpeg";
+            return this.#img;
+        }
+        this.#img = img;
+        return img;
     }
 
     precoTotal(){

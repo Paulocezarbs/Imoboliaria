@@ -4,8 +4,8 @@ class Casa extends Imovel {
     #areaLivre;
     #qtdAndares;
 
-    constructor(preco, areaTotal, corretor, logradouro, bairro, cidade, UF, CEP, areaLivre, qtdAndares) {
-        super(preco, areaTotal, corretor, logradouro, bairro, cidade, UF, CEP);
+    constructor(preco, areaTotal, corretor, logradouro, bairro, cidade, UF, CEP, img, areaLivre, qtdAndares) {
+        super(preco, areaTotal, corretor, logradouro, bairro, cidade, UF, CEP, img);
         this.areaLivre = areaLivre;
         this.qtdAndares = qtdAndares;
     }

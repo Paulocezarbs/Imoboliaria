@@ -4,8 +4,8 @@ class Terreno extends Imovel{
 #inclinacao;
 #ehCercado;
 
-constructor(preco, areaTotal, corretor, logradouro, bairro, cidade, UF, CEP, inclinacao,ehCercado){
-super(preco, areaTotal, corretor, logradouro, bairro, cidade, UF, CEP); // chama o construtor de imovel.js
+constructor(preco, areaTotal, corretor, logradouro, bairro, cidade, UF, CEP, img, inclinacao,ehCercado){
+super(preco, areaTotal, corretor, logradouro, bairro, cidade, UF, CEP, img); // chama o construtor de imovel.js
 
 this.inclinacao = inclinacao;
 this.ehCercado = ehCercado;

@@ -2,8 +2,8 @@ import { Imovel } from "./Imovel.js";
 export class Apartamento extends Imovel{
     #andar;
 
-    constructor(preco, areaTotal, corretor, logradouro, bairro, cidade, UF, CEP, andar){
-        super(preco, areaTotal, corretor, logradouro, bairro, cidade, UF, CEP);
+    constructor(preco, areaTotal, corretor, logradouro, bairro, cidade, UF, CEP, img, andar){
+        super(preco, areaTotal, corretor, logradouro, bairro, cidade, UF, CEP, img);
         this.andar = andar;
     }
 
