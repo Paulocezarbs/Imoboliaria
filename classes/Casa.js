@@ -35,17 +35,14 @@ class Casa extends Imovel {
         return qtdAndares;
     }
 
+    areaConstruida (){
+        let area = super.areaTotal - this.areaLivre;
+        return area;
+    }
+
     toString (){
-        return "Area livre: " + this.#areaLivre +
-            "\nQuantidade de andares: " + this.#qtdAndares;
+        return super.toString()  
+        + "Area livre: " + this.#areaLivre + "m²;\n" 
+        + "Quantidade de andares: " + this.#qtdAndares + "andar(es);";
     }
-
-    stringify (){
-        return '\n{' + 
-        '\n\t"areaLivre" : "' + this.#areaLivre + '" ,' + 
-        '\n\t"qtdAndares" : "' + this.#qtdAndares + '" ,' +
-        '\n}'; 
-    }
-
-    
 }
