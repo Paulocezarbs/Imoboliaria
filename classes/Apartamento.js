@@ -1,4 +1,5 @@
-export class Apartamento{
+import { Imovel } from "./Imovel.js";
+export class Apartamento extends Imovel{
     #andar;
 
     constructor(preco, areaTotal, corretor, logradouro, bairro, cidade, UF, CEP, andar){
