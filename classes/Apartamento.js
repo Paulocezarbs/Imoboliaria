@@ -21,8 +21,8 @@ export class Apartamento extends Imovel{
         return 1;
     }
 
-    toSting(){
-        return super.toSting() + "Andar: " + this.#andar + "º andar.";
+    toString(){
+        return super.toString() + "Andar: " + this.#andar + "º andar.";
     }
 
 }
