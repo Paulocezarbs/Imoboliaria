@@ -40,5 +40,10 @@ return ehCercado;
 
 }
 
+toString(){
+    return super.toString() 
+    + "Inclinação: " + this.#inclinacao + "º" + ";\n"
+    + "Cercado: " + (this.#ehCercado == 1 ? "Sim" : "Não") + ".\n";
+}
 
 }
