@@ -116,7 +116,7 @@ export class Imovel{
     }
 
     toString(){
-        return "Preço: " + this.precoTotal() + ";\n"
+        return "Preço: R$ " + this.precoTotal() + ";\n"
             + "Área Total: " + this.#areaTotal + ";\n"
             + "Corretor: " + this.#corretor.nome + ";\n"
             + "Telefone: "+ this.#corretor.telefone + ";\n"
