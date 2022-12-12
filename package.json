@@ -1,0 +1,14 @@
+
+{
+  "name": "aplicacao_imobiliaria",
+  "version": "1.0.0",
+  "description": "Trabalho final Programação orientada a objetos - Imolibiaria Dreams",
+  "main": "imoveis.js",
+  "scripts": {
+    "start": "node imoveis.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Henrique Galvão, Paulo Cezar, Samir Coutinho",
+  "license": "ISC",
+  "type": "module"
+}

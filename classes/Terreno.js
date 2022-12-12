@@ -1,6 +1,6 @@
 import {Imovel} from "./Imovel.js";
 
-class Terreno extends Imovel{
+export class Terreno extends Imovel{
 #inclinacao;
 #ehCercado;
 
