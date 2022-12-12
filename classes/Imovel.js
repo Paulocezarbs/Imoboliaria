@@ -119,7 +119,7 @@ export class Imovel{
 
     set img(img){
         if( img == ""){
-            this.#img = "../imagens-imoveis/imagem-padrao.jpeg";
+            this.#img = "../imagens-imoveis/imagem-padrao.jpg";
             return this.#img;
         }
         this.#img = img;
@@ -128,6 +128,10 @@ export class Imovel{
 
     precoTotal(){
         return  this.#preco + (this.#preco * (this.#corretor.comissao / 100));
+    }
+
+    enderecoImovel(){
+        return this.#logradouro + ", " + this.#bairro + ", " + this.#cidade + " - " + this.#UF + ", CEP: " + this.#CEP;
     }
 
     toString(){
