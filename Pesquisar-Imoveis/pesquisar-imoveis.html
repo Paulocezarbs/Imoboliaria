@@ -17,7 +17,6 @@
             
             <nav class="menu-header">
                 <a href="../Home/home.html">Home</a>
-                <a href="../Adicionar-imoveis/adicionar-imoveis.html">Adicionar Imóveis</a>
                 <a href="#top-pesquisa">Pesquisar Imóveis</a>
                 <a href="../Contato/contato.html">Contato</a>
             </nav>
@@ -34,11 +33,6 @@
             
             <div class="filtro-esquerda">
 
-                <div class="filtro filtro-cidade">
-                    <h2>Cidade</h2>
-                    <input type="search" id="inCidade" list="cidadesDisponiveis">
-                </div>
-
                 <datalist id="cidadesDisponiveis">
                 </datalist>
 
@@ -47,14 +41,11 @@
                     <div class="filtro-opcoes">
                         <div class="opcoes-dupla">
                             <label><img src="../imagens-site/icon-apartamento.png" class="icon-filtro"><input id="cbApartamento" type="checkbox">Apartamento</label>
-                            <label><img src="../imagens-site/icon-casa.png" class="icon-filtro"><input id="cbCasa" type="checkbox">Casa</label>
                         </div>
                         <div class="opcoes-dupla">
-                            <label><img src="../imagens-site/icon-cabin.png" class="icon-filtro"><input id="cbSitio" type="checkbox">Sítio</label>
-                            <label><img src="../imagens-site/icon-loja.png" class="icon-filtro"><input id="cbLoja" type="checkbox">Loja</label>
+                            <label><img src="../imagens-site/icon-casa.png" class="icon-filtro"><input id="cbCasa" type="checkbox">Casa</label>
                         </div>                 
                         <div class="opcoes-dupla">
-                            <label><img src="../imagens-site/icon-duplex.png" class="icon-filtro"><input id="cbDuplex" type="checkbox">Duplex</label>
                             <label><img src="../imagens-site/icon-plot.png" class="icon-filtro"><input id="cbTerreno" type="checkbox">Terreno</label>
                         </div>
                     </div>
@@ -64,16 +55,8 @@
 
             <div class="filtro-direita">
 
-                <div class="filtro filtro-bairro">
-                    <h2>Bairro</h2>
-                    <select id="inBairro">
-                        <option value="Todos">Todos</option>                    
-                    </select>
-                    <span class="erro-bairro">*Selecione uma cidade</span>
-                </div>
-
                 <div class="filtro filtro-areaConstruida">
-                    <h2>Área construida</h2>
+                    <h2>Área Total</h2>
                     <label for="inAreaMinima">Mínimo</label>
                     <input id="inAreaMinima" type="number">
                     <label for inAreaMaxima>Máximo</label>
@@ -115,7 +98,6 @@
     
           <nav class="menu-footer">
             <a href="../Home/home.html">Home</a>
-            <a href="../Adicionar-imoveis/adicionar-imoveis.html">Adicionar Imóveis</a>
             <a href="#top-pesquisa">Pesquisar-Imoveis</a>
             <a href="../Contato/contato.html">Contato</a>
           </nav>
