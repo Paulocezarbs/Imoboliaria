@@ -88,6 +88,7 @@ body{
 
 /* Dupla de tipos */
 .opcoes-dupla{
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     margin-right: 40px;
@@ -222,6 +223,6 @@ body{
     transition: 0.2s all;
 }
 
-footer{
+/* footer{
     margin-top: 250px;
-}
+} */

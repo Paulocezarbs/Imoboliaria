@@ -7,6 +7,10 @@ html {
 
 body {
     background-color: #EDFBFF;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
 }
 
 /* Início do header */
@@ -52,6 +56,10 @@ header{
     margin: 0 auto;
 }
 /* Fim do header */
+
+main{
+  flex-grow: 1;
+}
 
 /* início do footer */
 .menu-footer a {
