@@ -13,6 +13,7 @@ body{
     margin: 0 auto;
     font-family: 'Hepta Slab', serif;
     display: flex;
+    margin-top: 60px;
 }
 
 /* Cada caixa de filtro */
@@ -223,6 +224,6 @@ body{
     transition: 0.2s all;
 }
 
-/* footer{
-    margin-top: 250px;
-} */
+footer{
+    margin-top: 50px;
+}
