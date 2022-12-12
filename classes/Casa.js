@@ -1,6 +1,6 @@
 import { Imovel } from "./Imovel.js";
 
-class Casa extends Imovel {
+export class Casa extends Imovel {
     #areaLivre;
     #qtdAndares;
 
@@ -50,6 +50,6 @@ class Casa extends Imovel {
     toString (){
         return super.toString()  
         + "Area livre: " + this.#areaLivre + "m²;\n" 
-        + "Quantidade de andares: " + this.#qtdAndares + "andar(es);";
+        + "Quantidade de andares: " + this.#qtdAndares + " andar(es);";
     }
 }

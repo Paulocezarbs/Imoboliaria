@@ -127,12 +127,12 @@ export class Imovel{
     }
 
     precoTotal(){
-        return this.#preco = this.#preco + (this.#corretor.comissao / 100);
+        return  this.#preco + (this.#preco * (this.#corretor.comissao / 100));
     }
 
     toString(){
         return "Preço: R$ " + this.precoTotal() + ";\n"
-            + "Área Total: " + this.#areaTotal + ";\n"
+            + "Área Total: " + this.#areaTotal + "m²;\n"
             + "Corretor: " + this.#corretor.nome + ";\n"
             + "Telefone: "+ this.#corretor.telefone + ";\n"
             + "Endereço: " + this.#logradouro + ", " + this.#bairro + ", " + this.#cidade + " - " + this.#UF + ", CEP: " + this.#CEP + ";\n";
