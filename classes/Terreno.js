@@ -76,20 +76,30 @@ get inclinacao (){
         let ehCercado = document.createElement("p");
         ehCercado.classList.add("tipo-detalhes");
 
-        tituloImovel.textContent = "Terreno em " + super.cidade;
-        divInfo.appendChild(tituloImovel);
+        let divPreco = document.createElement("div");
+        divPreco.classList.add("div-preco");
 
+        let preco = document.createElement("p");
+        preco.classList.add("tipo-detalhes");
+        preco.classList.add("preco");
+        
+        tituloImovel.textContent = "Terreno em " + super.cidade;
+        
         inclinacao.textContent = "Inclinação: " + this.#inclinacao + "º";
         ehCercado.textContent = (this.#ehCercado == 1 ? "Terreno cercado" : "Terreno não cercado");
         areaTotal.textContent = "Área Total: " + super.areaTotal + "m²";
         enderecoImovel.textContent = "Endereço: " + super.enderecoImovel();
-
+        preco.textContent = "Preço: R$" + super.preco;
+        
+        divInfo.appendChild(tituloImovel);
         divInfo.appendChild(areaTotal);
         divInfo.appendChild(enderecoImovel);
         divInfo.appendChild(inclinacao);
         divInfo.appendChild(ehCercado);
-
         divImovel.appendChild(divInfo);
+        
+        divImovel.appendChild(divPreco);
+        divPreco.appendChild(preco);
 
         return divImovel;
     }

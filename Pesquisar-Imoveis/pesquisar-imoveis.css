@@ -218,6 +218,18 @@ body{
     font-size: 0.8em;
 }
 
+.div-preco{
+    position: absolute;
+    height: 100%;
+    top: 5px;
+    right: 50px;
+}
+
+.preco{
+    font-size: 1em;
+    font-weight: 600;
+}
+
 .img-imovel{
     height: 150px;
     /* border-radius: 10px; */
