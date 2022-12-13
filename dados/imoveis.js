@@ -9,7 +9,7 @@ const casa2 = new Casa (155000, 80, corretor3, "R. Castro Alves, 237", "Jardin L
 const casa3 = new Casa (95000, 40, corretor5, "R. Padre Nobrega, 572", "Bauneario Carapebus", "Serra", "ES", "22164-127", "casa005.jpg", 30, 1);
 const casa4 = new Casa (1000000, 300, corretor2, "R. Piracanjuba, 1", "Praião", "Big Fundo", "ES", "29143-000", "casa007.jpg", 80, 6);
 const casa5 = new Casa (1500000, 250, corretor2, "R. Das Azaleias, 22", "Distrito das Mansões", "Santa Teresa", "ES", "24157-000", "casa002.jpg", 60, 3);
-const casa6 = new Casa (45000, 50, corretor5, "R. Sete de Setembro, 4", "Centro", "Vitória", "ES", "29133-021", "casa00.jpg", 10, 1);
+const casa6 = new Casa (45000, 50, corretor5, "R. Sete de Setembro, 4", "Centro", "Vitória", "ES", "29133-021", "casa002.jpg", 10, 1);
 const casa7 = new Casa (550000, 140, corretor1, "Av. Constantino Dias, 321", "Itaparica", "Vila Velha", "ES", "29221-177", "casa012.jpg", 55, 2);
 const casa8 = new Casa (240000, 120, corretor3, "R. Praia da Gaivota, 9", "Coabe4", "Aracruz", "ES", "29100-117", "casa019.jpg", 40, 2);
 const casa9 = new Casa (705000, 200, corretor4, "R. Almirante Barbosa, 2", "Santana", "Cariacica", "ES", "29124-072", "casa022.jpg", 80, 3);
@@ -40,7 +40,7 @@ const apartamento9 = new Apartamento (122500, 72, corretor8, "Joinville, 21", "C
 const apartamento10 = new Apartamento (1500000, 312, corretor8, "Praia Grande, 4", "Costeiro", "São Paulo", "SP", "02700-000", "apartamento012.jpg", 1);
 
 export const vetImoveis = [
-    //casa1, casa2, casa3, casa4, casa5, casa6, casa7, casa8, casa9, casa10,
-    //terreno1, terreno2, terreno3, terreno4, terreno5, terreno6, terreno7, terreno8, terreno9, terreno10,
+    casa1, casa2, casa3, casa4, casa5, casa6, casa7, casa8, casa9, casa10,
+    terreno1, terreno2, terreno3, terreno4, terreno5, terreno6, terreno7, terreno8, terreno9, terreno10,
     apartamento1, apartamento2, apartamento3, apartamento4, apartamento5, apartamento6, apartamento7, apartamento8, apartamento9, apartamento10
 ]
