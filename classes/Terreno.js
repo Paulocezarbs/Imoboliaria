@@ -10,11 +10,13 @@ export class Terreno extends Imovel {
         this.inclinacao = inclinacao;
         this.ehCercado = ehCercado;
 
-    }
 
-    get inclinacao() {
-        return this.#inclinacao;
-    }
+}
+ 
+get inclinacao (){
+    return this.#inclinacao;
+}
+
 
     set inclinacao(inclinacao) {
         if (inclinacao > 90 || inclinacao < 0) {
