@@ -1,4 +1,5 @@
 import { Imovel } from "./Imovel.js";
+
 export class Apartamento extends Imovel{
     #andar;
 
@@ -23,6 +24,47 @@ export class Apartamento extends Imovel{
 
     toString(){
         return super.toString() + "Andar: " + this.#andar + "º andar.";
+    }
+
+    div(){
+        let divImovel = document.createElement("div");
+        divImovel.classList.add("imovel"); 
+
+        let imgImovel = document.createElement("img");
+        imgImovel.classList.add("img-imovel");
+        imgImovel.src = "../imagens-imoveis/" + super.img; //Atribui um caminho personalizado para o src da img Ex.: ../imagens-imoveis/Apartamento001.jpg
+        imgImovel.classList.add("img-imovel");
+        divImovel.appendChild(imgImovel);
+
+        let divInfo = document.createElement("div");
+        divInfo.classList.add("informacoes-imovel");
+
+        let tituloImovel = document.createElement("p");
+        tituloImovel.classList.add("tipo-imovel");
+
+        let areaTotal = document.createElement("p");
+        areaTotal.classList.add("tipo-detalhes");
+
+        let enderecoImovel = document.createElement("p");
+        enderecoImovel.classList.add("tipo-detalhes");
+
+        let andarAp = document.createElement("p");
+        andarAp.classList.add("tipo-detalhes");
+
+        tituloImovel.textContent = "Apartamento em " + super.cidade;
+        divInfo.appendChild(tituloImovel);
+
+        andarAp.textContent =  this.#andar + "º Andar";
+        areaTotal.textContent = "Área Total: " + super.areaTotal + "m²";
+        enderecoImovel.textContent = "Endereço: " + super.enderecoImovel();
+
+        divInfo.appendChild(areaTotal);
+        divInfo.appendChild(enderecoImovel);
+        divInfo.appendChild(andarAp);
+
+        divImovel.appendChild(divInfo);
+
+    return divImovel;
     }
 
 }

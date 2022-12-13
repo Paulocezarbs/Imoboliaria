@@ -1,3 +1,8 @@
+import {vetImoveis} from "../dados/imoveis.js";
+import { Casa } from "../classes/Casa.js";
+import { Apartamento } from "../classes/Apartamento.js";
+import { Terreno } from "../classes/Terreno.js";
+
 var cbCasa = document.getElementById("cbCasa");
 var cbApartamento = document.getElementById("cbApartamento");
 var cbTerreno = document.getElementById("cbTerreno");
@@ -34,12 +39,18 @@ function filtrarImoveis(){
 
 function limparFiltros() {
 
-    cbApartamento.checked = false;
-    cbCasa.checked = false;
-    cbTerreno.checked = false;
+    // cbApartamento.checked = false;
+    // cbCasa.checked = false;
+    // cbTerreno.checked = false;
 
-    inAreaMinima.value = 0;
-    inAreaMaxima.value = "";
+    // inAreaMinima.value = 0;
+    // inAreaMaxima.value = "";
+
+    let imoveis = document.querySelector(".imoveis");
+    console.log(imoveis);
+    console.log(vetImoveis);
+    vetImoveis.forEach(imovel => imoveis.appendChild(imovel.div()));
+
 
 }
 

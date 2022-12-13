@@ -40,7 +40,7 @@ const apartamento9 = new Apartamento (122500, 72, corretor8, "Joinville, 21", "C
 const apartamento10 = new Apartamento (1500000, 312, corretor8, "Praia Grande, 4", "Costeiro", "São Paulo", "SP", "02700-000", "apartamento012.jpg", 1);
 
 export const vetImoveis = [
-    casa1, casa2, casa3, casa4, casa5, casa6, casa7, casa8, casa9, casa10,
-    terreno1, terreno2, terreno3, terreno4, terreno5, terreno6, terreno7, terreno8, terreno9, terreno10,
+    //casa1, casa2, casa3, casa4, casa5, casa6, casa7, casa8, casa9, casa10,
+    //terreno1, terreno2, terreno3, terreno4, terreno5, terreno6, terreno7, terreno8, terreno9, terreno10,
     apartamento1, apartamento2, apartamento3, apartamento4, apartamento5, apartamento6, apartamento7, apartamento8, apartamento9, apartamento10
 ]
