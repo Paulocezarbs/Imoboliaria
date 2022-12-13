@@ -11,7 +11,7 @@ this.inclinacao = inclinacao;
 this.ehCercado = ehCercado;
 
 }
-
+ 
 get inclinacao (){
     return this.#inclinacao;
 }

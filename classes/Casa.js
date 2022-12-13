@@ -52,4 +52,47 @@ export class Casa extends Imovel {
         + "Area livre: " + this.#areaLivre + "m²;\n" 
         + "Quantidade de andares: " + this.#qtdAndares + " andar(es);";
     }
+
+    div(){
+        let divImovel = document.createElement("div");
+        divImovel.classList.add("imovel"); 
+
+        let imgImovel = document.createElement("img");
+        imgImovel.classList.add("img-imovel");
+        imgImovel.src = "../imagens-imoveis/" + super.img; //Atribui um caminho personalizado para o src da img Ex.: ../imagens-imoveis/Apartamento001.jpg
+        imgImovel.classList.add("img-imovel");
+        divImovel.appendChild(imgImovel);
+
+        let divInfo = document.createElement("div");
+        divInfo.classList.add("informacoes-imovel");
+
+        let tituloImovel = document.createElement("p");
+        tituloImovel.classList.add("tipo-imovel");
+
+        let areaTotal = document.createElement("p");
+        areaTotal.classList.add("tipo-detalhes");
+
+        let areaConstruida = document.createElement("p");
+        areaConstruida.classList.add("tipo-detalhes");
+
+        let enderecoImovel = document.createElement("p");
+        enderecoImovel.classList.add("tipo-detalhes");
+
+        tituloImovel.textContent = "Casa em " + super.cidade;
+        divInfo.appendChild(tituloImovel);
+
+        areaConstruida.textContent = "Área Construida: " + this.areaConstruida() + "m²";
+        divInfo.appendChild(areaConstruida);
+ 
+        areaTotal.textContent = "Área Total: " + super.areaTotal + "m²";
+        enderecoImovel.textContent = "Endereço: " + super.enderecoImovel();
+
+        divInfo.appendChild(areaTotal);
+        divInfo.appendChild(enderecoImovel);
+       
+
+        divImovel.appendChild(divInfo);
+
+    return divImovel;
+    }
 }
