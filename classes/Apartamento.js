@@ -57,6 +57,9 @@ export class Apartamento extends Imovel{
         let enderecoImovel = document.createElement("p");
         enderecoImovel.classList.add("tipo-detalhes");
 
+        let corretorImovel = document.createElement("p");
+        corretorImovel.classList.add("tipo-detalhes");
+
         let andarAp = document.createElement("p");
         andarAp.classList.add("tipo-detalhes");
 
@@ -70,10 +73,12 @@ export class Apartamento extends Imovel{
         andarAp.textContent =  this.#andar + "º Andar";
         areaTotal.textContent = "Área Total: " + super.areaTotal + "m²";
         enderecoImovel.textContent = "Endereço: " + super.enderecoImovel();
+        corretorImovel.textContent = "Corretor(a): " + super.corretor.nome;
 
         divInfo.appendChild(areaTotal);
         divInfo.appendChild(enderecoImovel);
         divInfo.appendChild(andarAp);
+        divInfo.appendChild(corretorImovel);
 
         divImovel.appendChild(divInfo);
         divImovel.appendChild(divPreco);
