@@ -1,7 +1,4 @@
 import {vetImoveis} from "../dados/imoveis.js";
-import { Casa } from "../classes/Casa.js";
-import { Apartamento } from "../classes/Apartamento.js";
-import { Terreno } from "../classes/Terreno.js";
 import {criarDivImoveis } from "./pesquisar-imoveis-operacoes.js";
 
 var cbCasa = document.getElementById("cbCasa");
@@ -11,18 +8,15 @@ var inAreaMinima = document.getElementById("inAreaMinima");
 var inAreaMaxima = document.getElementById("inAreaMaxima");
 var btLimpar = document.getElementById("btLimpar");
 var btFiltrar = document.getElementById("btFiltrar");
-var main = document.querySelector("main");
+var sectionImoveis = document.querySelector(".sectionImoveis");
 
 document.addEventListener("DOMContentLoaded", mostrarImoveis)
 
 function mostrarImoveis (){
-    let divImoveis = criarDivImoveis(vetImoveis);
-    main.appendChild(divImoveis);
+    let divImoveis = criarDivImoveis(vetImoveis, [0,0], []);
+    sectionImoveis.innerText = "";
+    sectionImoveis.appendChild(divImoveis);
 }
-
-
-
-
 
 function filtrarImoveis(){
 
@@ -47,16 +41,23 @@ function filtrarImoveis(){
     if (cbTerreno.checked) {
         tipoImovel.push("Terreno");
     }
+
+    let divImoveis = criarDivImoveis(vetImoveis, filtroArea, tipoImovel);
+    sectionImoveis.innerText = "";
+    sectionImoveis.appendChild(divImoveis);
+
 }
 
 function limparFiltros() {
 
-    // cbApartamento.checked = false;
-    // cbCasa.checked = false;
-    // cbTerreno.checked = false;
+    cbApartamento.checked = false;
+    cbCasa.checked = false;
+    cbTerreno.checked = false;
 
-    // inAreaMinima.value = 0;
-    // inAreaMaxima.value = "";
+    inAreaMinima.value = 0;
+    inAreaMaxima.value = "";
+
+    mostrarImoveis();
 }
 
 
