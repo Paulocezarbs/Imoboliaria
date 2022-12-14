@@ -2,6 +2,7 @@ import {vetImoveis} from "../dados/imoveis.js";
 import { Casa } from "../classes/Casa.js";
 import { Apartamento } from "../classes/Apartamento.js";
 import { Terreno } from "../classes/Terreno.js";
+import {criarDivImoveis } from "./pesquisar-imoveis-operacoes.js";
 
 var cbCasa = document.getElementById("cbCasa");
 var cbApartamento = document.getElementById("cbApartamento");
@@ -10,6 +11,17 @@ var inAreaMinima = document.getElementById("inAreaMinima");
 var inAreaMaxima = document.getElementById("inAreaMaxima");
 var btLimpar = document.getElementById("btLimpar");
 var btFiltrar = document.getElementById("btFiltrar");
+var main = document.querySelector("main");
+
+document.addEventListener("DOMContentLoaded", mostrarImoveis)
+
+function mostrarImoveis (){
+    let divImoveis = criarDivImoveis(vetImoveis);
+    main.appendChild(divImoveis);
+}
+
+
+
 
 
 function filtrarImoveis(){
@@ -45,13 +57,6 @@ function limparFiltros() {
 
     // inAreaMinima.value = 0;
     // inAreaMaxima.value = "";
-
-    let imoveis = document.querySelector(".imoveis");
-    console.log(imoveis);
-    console.log(vetImoveis);
-    vetImoveis.forEach(imovel => imoveis.appendChild(imovel.div()));
-
-
 }
 
 
