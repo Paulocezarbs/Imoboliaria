@@ -53,6 +53,10 @@ export class Casa extends Imovel {
         + "Quantidade de andares: " + this.#qtdAndares + " andar(es);";
     }
 
+    tipo(){
+        return "Casa";
+    }
+
     div(){
         let divImovel = document.createElement("div");
         divImovel.classList.add("imovel"); 

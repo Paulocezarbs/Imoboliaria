@@ -26,6 +26,10 @@ export class Apartamento extends Imovel{
         return super.toString() + "Andar: " + this.#andar + "º andar.";
     }
 
+    tipo(){
+        return "Apartamento";
+    }
+
     div(){
         let divImovel = document.createElement("div");
         divImovel.classList.add("imovel"); 

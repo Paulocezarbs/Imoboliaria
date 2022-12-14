@@ -48,6 +48,10 @@ get inclinacao (){
             + "Cercado: " + (this.#ehCercado == 1 ? "Sim" : "Não") + ".\n";
     }
 
+    tipo(){
+        return "Terreno";
+    }
+
     div() {
         let divImovel = document.createElement("div");
         divImovel.classList.add("imovel");
