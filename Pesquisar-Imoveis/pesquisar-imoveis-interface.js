@@ -8,18 +8,15 @@ var inAreaMinima = document.getElementById("inAreaMinima");
 var inAreaMaxima = document.getElementById("inAreaMaxima");
 var btLimpar = document.getElementById("btLimpar");
 var btFiltrar = document.getElementById("btFiltrar");
-var sectionImoveis = document.querySelector(".sectionImoveis");
+var sectionImoveis = document.querySelector(".imoveis");
+let qtdImoveis = document.querySelector(".qtdImoveis")
 
 document.addEventListener("DOMContentLoaded", mostrarImoveis)
 
-function mostrarImoveis (){
-    let divImoveis = criarDivImoveis(vetImoveis, [0,0], []);
-    sectionImoveis.innerText = "";
-    sectionImoveis.appendChild(divImoveis);
-}
-
-function filtrarImoveis(){
-
+function mostrarImoveis(){
+    qtdImoveis.innerText = ""
+    let textoInformacoes = document.createElement("p")
+   
     let filtroArea = [];
     let tipoImovel = [];
 
@@ -41,10 +38,16 @@ function filtrarImoveis(){
     if (cbTerreno.checked) {
         tipoImovel.push("Terreno");
     }
+    let vetCardImoveis = criarDivImoveis(vetImoveis,filtroArea, tipoImovel);
 
-    let divImoveis = criarDivImoveis(vetImoveis, filtroArea, tipoImovel);
     sectionImoveis.innerText = "";
-    sectionImoveis.appendChild(divImoveis);
+    for(let i = 0; vetCardImoveis.length > i; i++){
+        sectionImoveis.appendChild(vetCardImoveis[i]);  
+    }
+    
+    textoInformacoes.textContent = vetCardImoveis.length + " imóveis encontrados com essas especificações!"
+    textoInformacoes.classList.add("texto-informacoes");
+    qtdImoveis.appendChild(textoInformacoes)
 
 }
 
@@ -61,5 +64,5 @@ function limparFiltros() {
 }
 
 
-btFiltrar.addEventListener("click", filtrarImoveis);
+btFiltrar.addEventListener("click", mostrarImoveis);
 btLimpar.addEventListener("click", limparFiltros);
