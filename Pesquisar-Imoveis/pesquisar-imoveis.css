@@ -187,7 +187,7 @@ body{
     padding: 10px;
 
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 
     width: 100%;
 
@@ -206,6 +206,21 @@ body{
 
 .informacoes-imovel{
     margin-left: 20px;
+    width: 60%;
+}
+
+.div-preco{
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-end;
+}
+
+.div-preco p{
+    margin-top: 8px;
+    margin-right: 8px;
 }
 
 .tipo-imovel{

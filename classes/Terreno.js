@@ -61,6 +61,11 @@ get inclinacao (){
         let divInfo = document.createElement("div");
         divInfo.classList.add("informacoes-imovel");
 
+        let divPreco = document.createElement("div");
+        divPreco.classList.add("div-preco");
+
+        let preco = document.createElement("p");
+
         let tituloImovel = document.createElement("p");
         tituloImovel.classList.add("tipo-imovel");
 
@@ -76,6 +81,10 @@ get inclinacao (){
         let ehCercado = document.createElement("p");
         ehCercado.classList.add("tipo-detalhes");
 
+        preco.textContent = "R$" + (super.preco).toFixed(2);
+
+        divPreco.appendChild(preco);
+
         tituloImovel.textContent = "Terreno em " + super.cidade;
         divInfo.appendChild(tituloImovel);
 
@@ -90,6 +99,7 @@ get inclinacao (){
         divInfo.appendChild(ehCercado);
 
         divImovel.appendChild(divInfo);
+        divImovel.appendChild(divPreco);
 
         return divImovel;
     }

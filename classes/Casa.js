@@ -66,6 +66,11 @@ export class Casa extends Imovel {
         let divInfo = document.createElement("div");
         divInfo.classList.add("informacoes-imovel");
 
+        let divPreco = document.createElement("div");
+        divPreco.classList.add("div-preco");
+
+        let preco = document.createElement("p");
+
         let tituloImovel = document.createElement("p");
         tituloImovel.classList.add("tipo-imovel");
 
@@ -77,6 +82,10 @@ export class Casa extends Imovel {
 
         let enderecoImovel = document.createElement("p");
         enderecoImovel.classList.add("tipo-detalhes");
+
+        preco.textContent = "R$" + (super.preco).toFixed(2);
+
+        divPreco.appendChild(preco);
 
         tituloImovel.textContent = "Casa em " + super.cidade;
         divInfo.appendChild(tituloImovel);
@@ -92,6 +101,9 @@ export class Casa extends Imovel {
        
 
         divImovel.appendChild(divInfo);
+        divImovel.appendChild(divPreco);
+
+        
 
     return divImovel;
     }
