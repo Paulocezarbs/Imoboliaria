@@ -7,9 +7,9 @@ import { corretor1, corretor2, corretor3, corretor4, corretor5, corretor6, corre
 const casa1 = new Casa (345000, 340, corretor1, "R. São Jorge, 5", "Antônio Ferreira Borges", "Cariacica", "ES", "29773-074", "casa001.jpg", 145, 1);
 const casa2 = new Casa (155000, 80, corretor3, "R. Castro Alves, 237", "Jardin Limoeiro", "Serra", "ES", "29164-077", "casa003.jpg", 20, 1);
 const casa3 = new Casa (95000, 40, corretor5, "R. Padre Nobrega, 572", "Bauneario Carapebus", "Serra", "ES", "22164-127", "casa005.jpg", 30, 1);
-const casa4 = new Casa (1000000, 300, corretor2, "R. Piracanjuba, 1", "Praião", "Big Fundo", "ES", "29143-000", "casa007.jpg", 80, 6);
-const casa5 = new Casa (1500000, 250, corretor2, "R. Das Azaleias, 22", "Distrito das Mansões", "Santa Teresa", "ES", "24157-000", "casa002.jpg", 60, 3);
-const casa6 = new Casa (45000, 50, corretor5, "R. Sete de Setembro, 4", "Centro", "Vitória", "ES", "29133-021", "casa002.jpg", 10, 1);
+const casa4 = new Casa (1000000, 300, corretor2, "R. Piracanjuba, 1", "Praião", "Fundão", "ES", "29143-000", "casa007.jpg", 80, 6);
+const casa5 = new Casa (1500000, 250, corretor2, "R. Das Azaleias, 22", "Jardim da montanha", "Santa Teresa", "ES", "24157-000", "casa002.jpg", 60, 3);
+const casa6 = new Casa (45000, 50, corretor5, "R. Sete de Setembro, 4", "Centro", "Vitória", "ES", "29133-021", "casa004.jpg", 10, 1);
 const casa7 = new Casa (550000, 140, corretor1, "Av. Constantino Dias, 321", "Itaparica", "Vila Velha", "ES", "29221-177", "casa012.jpg", 55, 2);
 const casa8 = new Casa (240000, 120, corretor3, "R. Praia da Gaivota, 9", "Coabe4", "Aracruz", "ES", "29100-117", "casa019.jpg", 40, 2);
 const casa9 = new Casa (705000, 200, corretor4, "R. Almirante Barbosa, 2", "Santana", "Cariacica", "ES", "29124-072", "casa022.jpg", 80, 3);

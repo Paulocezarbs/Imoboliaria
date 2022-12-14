@@ -113,8 +113,6 @@ export class Casa extends Imovel {
         divImovel.appendChild(divInfo);
         divImovel.appendChild(divPreco);
 
-        
-
     return divImovel;
     }
 }

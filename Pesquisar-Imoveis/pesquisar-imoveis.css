@@ -1,5 +1,9 @@
-body{
+/* body{
     background: linear-gradient(180deg, rgba(17,140,171,1) 0%, rgba(115,213,237,1) 44%, rgba(200,244,255,1) 100%);
+} */
+
+body{
+    background-color: rgba(115,213,237,1);
 }
   
 /* Div atras do header */
