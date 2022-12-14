@@ -39,6 +39,11 @@ export class Apartamento extends Imovel{
         let divInfo = document.createElement("div");
         divInfo.classList.add("informacoes-imovel");
 
+        let divPreco = document.createElement("div");
+        divPreco.classList.add("div-preco");
+
+        let preco = document.createElement("p");
+
         let tituloImovel = document.createElement("p");
         tituloImovel.classList.add("tipo-imovel");
 
@@ -50,6 +55,10 @@ export class Apartamento extends Imovel{
 
         let andarAp = document.createElement("p");
         andarAp.classList.add("tipo-detalhes");
+
+        preco.textContent = "R$" + (super.preco).toFixed(2);
+
+        divPreco.appendChild(preco);
 
         tituloImovel.textContent = "Apartamento em " + super.cidade;
         divInfo.appendChild(tituloImovel);
@@ -63,6 +72,7 @@ export class Apartamento extends Imovel{
         divInfo.appendChild(andarAp);
 
         divImovel.appendChild(divInfo);
+        divImovel.appendChild(divPreco);
 
     return divImovel;
     }
