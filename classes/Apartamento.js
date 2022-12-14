@@ -73,7 +73,7 @@ export class Apartamento extends Imovel{
         andarAp.textContent =  this.#andar + "º Andar";
         areaTotal.textContent = "Área Total: " + super.areaTotal + "m²";
         enderecoImovel.textContent = "Endereço: " + super.enderecoImovel();
-        corretorImovel.textContent = "Corretor(a): " + super.corretor.nome;
+        corretorImovel.textContent = "Corretor(a): " + super.corretor.nome + " - Tel.: " + super.corretor.telefone;
 
         divInfo.appendChild(areaTotal);
         divInfo.appendChild(enderecoImovel);

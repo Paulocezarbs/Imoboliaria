@@ -98,7 +98,7 @@ get inclinacao (){
         areaTotal.textContent = "Área Total: " + super.areaTotal + "m²";
         enderecoImovel.textContent = "Endereço: " + super.enderecoImovel();
         inclinacao.textContent = "Inclinação: " + this.#inclinacao + "º - " + (this.#ehCercado == 1 ? " - Terreno cercado" : "Terreno não cercado");
-        corretorImovel.textContent = "Corretor(a): " + super.corretor.nome;
+        corretorImovel.textContent = "Corretor(a): " + super.corretor.nome + " - Tel.: " + super.corretor.telefone;
 
         divInfo.appendChild(areaTotal);
         divInfo.appendChild(enderecoImovel);

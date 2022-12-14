@@ -31,12 +31,14 @@ export class Corretor {
     }
 
     get telefone(){
+        let tellFormatado =   "(" + this.#telefone.slice(0,2) + ") " + this.#telefone.slice(2, 7) + "-" + this.#telefone.slice(7,12);
+        this.#telefone = tellFormatado;
         return this.#telefone;
     }
 
     set telefone(telefone){
         if(telefone.length != 11){
-            this.#telefone = "00000000000";
+            this.#telefone = "(00000000000";
             return this.#telefone;
         }
         this.#telefone = telefone;

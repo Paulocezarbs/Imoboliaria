@@ -103,7 +103,7 @@ export class Casa extends Imovel {
         areaTotal.textContent = "Área Total: " + super.areaTotal + "m²";
         enderecoImovel.textContent = "Endereço: " + super.enderecoImovel();
 
-        corretorImovel.textContent = "Corretor(a): " + super.corretor.nome;
+        corretorImovel.textContent = "Corretor(a): " + super.corretor.nome + " - Tel.: " + super.corretor.telefone;
 
         divInfo.appendChild(areaTotal);
         divInfo.appendChild(enderecoImovel);
