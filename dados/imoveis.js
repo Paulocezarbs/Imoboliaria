@@ -41,6 +41,6 @@ const apartamento10 = new Apartamento (1500000, 312, corretor8, "Praia Grande, 4
 
 export const vetImoveis = [
     casa1, terreno2, apartamento3, terreno6, casa5, casa6, apartamento2, casa8, terreno9, apartamento6,
-    terreno1, casa2, terreno3, terreno4, terreno5, casa4, apartamento5, terreno8, casa9, terreno10,
-    apartamento1, casa7,casa3, apartamento4, terreno7, casa10, apartamento7, apartamento8, apartamento9, apartamento10
+    terreno1, casa2, terreno3, apartamento8, terreno5, casa4, apartamento5, terreno8, casa9, terreno10,
+    apartamento1, casa7, casa3, apartamento4, terreno7, casa10, apartamento7,terreno4 , apartamento9, apartamento10
 ]

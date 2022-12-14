@@ -87,6 +87,9 @@ export class Casa extends Imovel {
         let enderecoImovel = document.createElement("p");
         enderecoImovel.classList.add("tipo-detalhes");
 
+        let corretorImovel = document.createElement("p");
+        corretorImovel.classList.add("tipo-detalhes");
+
         preco.textContent = "R$" + (super.preco).toFixed(2);
 
         divPreco.appendChild(preco);
@@ -100,8 +103,11 @@ export class Casa extends Imovel {
         areaTotal.textContent = "Área Total: " + super.areaTotal + "m²";
         enderecoImovel.textContent = "Endereço: " + super.enderecoImovel();
 
+        corretorImovel.textContent = "Corretor(a): " + super.corretor.nome + " - Tel.: " + super.corretor.telefone;
+
         divInfo.appendChild(areaTotal);
         divInfo.appendChild(enderecoImovel);
+        divInfo.appendChild(corretorImovel);
        
 
         divImovel.appendChild(divInfo);

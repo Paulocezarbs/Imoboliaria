@@ -85,6 +85,9 @@ get inclinacao (){
         let ehCercado = document.createElement("p");
         ehCercado.classList.add("tipo-detalhes");
 
+        let corretorImovel = document.createElement("p");
+        corretorImovel.classList.add("tipo-detalhes");
+
         preco.textContent = "R$" + (super.preco).toFixed(2);
 
         divPreco.appendChild(preco);
@@ -92,15 +95,16 @@ get inclinacao (){
         tituloImovel.textContent = "Terreno em " + super.cidade;
         divInfo.appendChild(tituloImovel);
 
-        inclinacao.textContent = "Inclinação: " + this.#inclinacao + "º";
-        ehCercado.textContent = (this.#ehCercado == 1 ? "Terreno cercado" : "Terreno não cercado");
         areaTotal.textContent = "Área Total: " + super.areaTotal + "m²";
         enderecoImovel.textContent = "Endereço: " + super.enderecoImovel();
+        inclinacao.textContent = "Inclinação: " + this.#inclinacao + "º - " + (this.#ehCercado == 1 ? " - Terreno cercado" : "Terreno não cercado");
+        corretorImovel.textContent = "Corretor(a): " + super.corretor.nome + " - Tel.: " + super.corretor.telefone;
 
         divInfo.appendChild(areaTotal);
         divInfo.appendChild(enderecoImovel);
         divInfo.appendChild(inclinacao);
         divInfo.appendChild(ehCercado);
+        divInfo.appendChild(corretorImovel);
 
         divImovel.appendChild(divInfo);
         divImovel.appendChild(divPreco);

@@ -10,3 +10,4 @@ export const corretor7 = new Corretor("Carla Nascimento", "81286508312", "969329
 export const corretor8 = new Corretor("Luan Broetto", "86417014517", "31933757437", "CONCRETTIZE Imobiliária", 3);
 export const corretor9 = new Corretor("Afonso Dias", "65422700864", "63935558834", "Habtare Imóveis", 11);
 export const corretor10 = new Corretor("Breno Costa", "74700100761", "68920232141", "Corretor Edison Soares", 12);
+
